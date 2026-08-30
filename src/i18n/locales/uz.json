@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "activities": "Faoliyat",
+    "news": "Yangiliklar",
+    "contact": "Aloqa",
+    "donate": "Xayr-ehson",
+    "live": "Jonli",
+    "volunteer": "Ko'ngilli bo'lish"
+  },
+  "hero": {
+    "title": "O'zbekiston Qizil Yarim Oy Jamiyati",
+    "subtitle": "O'zbekistonda eng yoshi ulug' tashkilotlardan biri — 1928-yildan beri insonparvarlik yordami, favqulodda vaziyatlarga javob va jamiyatga xizmat ko'rsatib kelmoqda.",
+    "cta_donate": "Xayr-ehson qilish",
+    "cta_volunteer": "Ko'ngilli bo'lish"
+  },
+  "about": {
+    "label": "Biz haqimizda",
+    "title": "Mehribonlik merosi",
+    "description": "O'zbekiston Qizil Yarim Oy Jamiyati deyarli bir asrdan beri O'zbekiston xalqiga xizmat qilib kelmoqda. Xalqaro Qizil Xoch va Qizil Yarim Oy Harakati tarkibida biz inson hayoti va salomatligini himoya qilishga, har bir inson hurmatiga kafolat berishga intilamiz.",
+    "stat_1_number": "95+",
+    "stat_1_label": "Yillik xizmat",
+    "stat_2_number": "14",
+    "stat_2_label": "Hududiy tashkilotlar",
+    "stat_3_number": "50 000+",
+    "stat_3_label": "Ko'ngillilar"
+  },
+  "activities": {
+    "label": "Faoliyatimiz",
+    "title": "Biz nima qilamiz",
+    "medical": {
+      "title": "Tibbiy va ijtimoiy xizmat",
+      "desc": "Donorlik aktsiyalari, sog'lom turmush tarzini targ'ib qilish va zaif qatlamlarga ijtimoiy yordam dasturlari."
+    },
+    "emergency": {
+      "title": "Favqulodda vaziyatlarga javob",
+      "desc": "Tabiiy ofatlarga tayyorgarlik, favqulodda vaziyatlarni bartaraf etish va tezkor javob guruhlari."
+    },
+    "first_aid": {
+      "title": "Birinchi yordam o'rgatish",
+      "desc": "Hayot saqlab qoladigan birinchi yodam ko'nikmalarini jamiyatlar, maktablar va tashkilotlarga o'rgatish."
+    },
+    "donation": {
+      "title": "Qon donorligi",
+      "desc": "Ixtiyoriy va bepul qon donorligini targ'ib qilish hamda xavfsiz qon ta'minotini ta'minlash."
+    },
+    "volunteer": {
+      "title": "Yoshlar va ko'ngillilik",
+      "desc": "Yoshlarni insonparvarlik ishlariga jalb qilish va kuchli ko'ngillilar tarmog'ini yaratish."
+    },
+    "law": {
+      "title": "Xalqaro insonparvarlik huquqi",
+      "desc": "Jeneva konvensiyalari va xalqaro insonparvarlik tamoyillari haqidagi bilimlarni tarqatish."
+    }
+  },
+  "news": {
+    "label": "So'nggi yangiliklar",
+    "title": "Yangiliklardan xabardor bo'ling",
+    "item_1": {
+      "title": "Suv toshqinidan zararlangan hududlarga tez yordam",
+      "date": "15-avgust, 2025",
+      "excerpt": "Mavsumiy suv toshqinidan zararlangan aholiga insonparvarlik yordami ko'rsatish uchun tezkor javob guruhlari yuborildi."
+    },
+    "item_2": {
+      "title": "Qon donorlik aktsiyasi natijalari",
+      "date": "10-avgust, 2025",
+      "excerpt": "Umumxalq qon donorlik aktsiyasi barcha viloyatlar bo'ylab 5 000 dan ortiq birlik to'plab, maqsadlarga erishdi."
+    },
+    "item_3": {
+      "title": "Yangi ko'ngillilar o'quv dasturi",
+      "date": "5-avgust, 2025",
+      "excerpt": "Birinchi yordam, favqulodda vaziyatlarga javob va jamiyat salomatligini o'z ichiga olgan yangilangan ko'ngillilar o'quv dasturining ishga tushirilishi."
+    }
+  },
+  "contact": {
+    "label": "Biz bilan bog'laning",
+    "title": "Aloqa",
+    "name": "Ismingiz",
+    "email": "Elektron pochta",
+    "message": "Xabaringiz",
+    "send": "Xabar yuborish",
+    "address": "Manzil",
+    "address_text": "Amir Temur ko'chasi 12, Toshkent, O'zbekiston",
+    "phone": "Telefon",
+    "phone_text": "+998 71 236 50 48",
+    "success": "Xabar muvaffaqiyatli yuborildi!"
+  },
+  "live": {
+    "title": "Hududiy tashkilotlar",
+    "subtitle": "O'zbekistonning barcha hududlaridagi Qizil Yarim Oy bo'limlarimiz",
+    "status": "Hududiy tarmoq",
+    "regions": "Hududiy tashkilotlar",
+    "viloyats": "Viloyatlar",
+    "cities": "Shaharlar",
+    "details": "Batafsil",
+    "rais": "Rais",
+    "director": "Ijrochi direktor",
+    "phone": "Telefon",
+    "address": "Manzil"
+  },
+  "donate": {
+    "label": "Xayr-ehson",
+    "title": "O'z hissangizni qo'shing",
+    "subtitle": "Sizning xayr-ehsoningiz hayotni saqlab qolishga va butun dunyodagi muhtojlarga zaruriy yordam ko'rsatishga yordam beradi.",
+    "total_raised": "Jami yig'ilgan",
+    "choose_amount": "Xayr-ehson miqdorini tanlang",
+    "custom_amount": "Yoki o'z miqdoringizni kiriting",
+    "donate_now": "Xayr-ehson qilish",
+    "thank_you": "Rahmat!",
+    "confirm_message": "Sizning {{amount}} so'm miqdoridagi saxiy xayr-ehsoningiz hayotni saqlab qolishga yordam beradi. Qo'llab-quvvatlashingiz uchun rahmat!",
+    "close": "Yopish",
+    "leaderboard": "Eng yaxshi homiylar",
+    "sponsors": "Bizning homiylar"
+  },
+  "footer": {
+    "copyright": "© 2025 O'zbekiston Qizil Yarim Oy Jamiyati. Barcha huquqlar himoyalangan.",
+    "about_text": "Xalqaro Qizil Xoch va Qizil Yarim Oy Harakatining bir qismi."
+  }
+}

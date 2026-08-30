@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #ab1509;
+  --color-primary-light: #d42010;
+  --color-primary-dark: #8a1107;
+  --color-surface-light: #fff7d3;
+  --color-surface-dark: #1c1c1c;
+  --color-accent-gold: #c5960c;
+  --color-accent-gold-light: #d4a817;
+  --color-accent-gold-dark: #a67e0a;
+  --color-accent-teal: #0d9488;
+  --color-accent-teal-light: #14b8a6;
+  --color-accent-teal-dark: #0a7a70;
+  --color-card-light: rgba(255, 255, 255, 0.85);
+  --color-card-dark: rgba(42, 42, 42, 0.85);
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* iOS-style scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(171, 21, 9, 0.3);
+  border-radius: 999px;
+}
+
+/* Glassmorphism utility — denser for better contrast */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+.dark .glass {
+  background: rgba(42, 42, 42, 0.85);
+}
+
+/* Hero background text animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50% { transform: translateY(-20px) rotate(-2deg); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+@keyframes pulse-glow {
+  0% { opacity: 0.04; }
+  50% { opacity: 0.16; }
+  100% { opacity: 0.04; }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
+/* iOS button style */
+.btn-ios {
+  @apply px-6 py-3 rounded-2xl font-semibold transition-all duration-300 ease-out;
+}
+.btn-ios:active {
+  @apply scale-95;
+}
+
+/* Section reveal animation placeholder */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Leaflet popup overrides */
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12) !important;
+  padding: 0 !important;
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  min-width: 180px !important;
+}
+.leaflet-popup-tip {
+  box-shadow: none !important;
+}
+.dark .leaflet-popup-content-wrapper {
+  background: #2a2a2a !important;
+  color: white !important;
+}
+.dark .leaflet-popup-tip {
+  background: #2a2a2a !important;
+}
+.dark .leaflet-popup-close-button {
+  color: white !important;
+}
+
+/* Custom scrollbar for card list */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(171, 21, 9, 0.2);
+  border-radius: 999px;
+}
+
+/* Donation range slider */
+.donation-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(197, 150, 12, 0.15);
+  outline: none;
+  cursor: pointer;
+}
+.dark .donation-slider {
+  background: rgba(197, 150, 12, 0.2);
+}
+.donation-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ab1509;
+  border: 4px solid white;
+  box-shadow: 0 2px 8px rgba(171, 21, 9, 0.35);
+  cursor: grab;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.donation-slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 4px 16px rgba(171, 21, 9, 0.5);
+  transform: scale(1.1);
+}
+.donation-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+.donation-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ab1509;
+  border: 4px solid white;
+  box-shadow: 0 2px 8px rgba(171, 21, 9, 0.35);
+  cursor: grab;
+}
+
+/* Leaflet pulse animation for markers */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(171, 21, 9, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(171, 21, 9, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(171, 21, 9, 0); }
+}

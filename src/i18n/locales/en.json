@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "activities": "Activities",
+    "news": "News",
+    "contact": "Contact",
+    "donate": "Donate",
+    "live": "Live",
+    "volunteer": "Become a Volunteer"
+  },
+  "hero": {
+    "title": "Uzbekistan Red Crescent Society",
+    "subtitle": "One of the oldest organizations in Uzbekistan, dedicated to humanitarian aid, emergency response, and community service since 1925.",
+    "cta_donate": "Make a Donation",
+    "cta_volunteer": "Join as Volunteer"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "A Legacy of Compassion",
+    "description": "The Uzbekistan Red Crescent Society has been serving the people of Uzbekistan for nearly a century. As part of the International Red Cross and Red Crescent Movement, we are committed to protecting human life and health, and to ensuring respect for all human beings.",
+    "stat_1_number": "95+",
+    "stat_1_label": "Years of Service",
+    "stat_2_number": "14",
+    "stat_2_label": "Regional Offices",
+    "stat_3_number": "50K+",
+    "stat_3_label": "Volunteers"
+  },
+  "activities": {
+    "label": "Our Activities",
+    "title": "What We Do",
+    "medical": {
+      "title": "Medical & Social Services",
+      "desc": "Blood donation drives, health promotion, and social welfare programs for vulnerable communities."
+    },
+    "emergency": {
+      "title": "Emergency Response",
+      "desc": "Disaster preparedness, emergency relief operations, and rapid response teams across all regions."
+    },
+    "first_aid": {
+      "title": "First Aid Training",
+      "desc": "Teaching life-saving first aid skills to communities, schools, and organizations nationwide."
+    },
+    "donation": {
+      "title": "Blood Donation",
+      "desc": "Promoting voluntary unpaid blood donation and ensuring safe blood supply for those in need."
+    },
+    "volunteer": {
+      "title": "Youth & Volunteering",
+      "desc": "Engaging youth in humanitarian work and building a strong network of dedicated volunteers."
+    },
+    "law": {
+      "title": "International Humanitarian Law",
+      "desc": "Disseminating knowledge about Geneva Conventions and international humanitarian principles."
+    }
+  },
+  "news": {
+    "label": "Latest News",
+    "title": "Stay Informed",
+    "item_1": {
+      "title": "Emergency Relief in Flood-Affected Areas",
+      "date": "August 15, 2025",
+      "excerpt": "Rapid response teams deployed to provide humanitarian assistance to communities affected by seasonal flooding."
+    },
+    "item_2": {
+      "title": "Blood Donation Campaign Results",
+      "date": "August 10, 2025",
+      "excerpt": "National blood donation drive collected over 5,000 units, exceeding targets across all regions."
+    },
+    "item_3": {
+      "title": "New Volunteer Training Program",
+      "date": "August 5, 2025",
+      "excerpt": "Launch of enhanced volunteer training program covering first aid, emergency response, and community health."
+    }
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title": "Get in Touch",
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Your Message",
+    "send": "Send Message",
+    "address": "Address",
+    "address_text": "12 Amir Temur Avenue, Tashkent, Uzbekistan",
+    "phone": "Phone",
+    "phone_text": "+998 71 236 50 48",
+    "success": "Message sent successfully!"
+  },
+  "live": {
+    "title": "Regional Offices",
+    "subtitle": "Our Red Crescent branches across all regions of Uzbekistan",
+    "status": "Regional Network",
+    "regions": "Regional Branches",
+    "viloyats": "Regions",
+    "cities": "Cities",
+    "details": "Details",
+    "rais": "Chairman",
+    "director": "Executive Director",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "donate": {
+    "label": "Donate",
+    "title": "Make a Difference",
+    "subtitle": "Your donation helps save lives and provide essential aid to those in need around the world.",
+    "total_raised": "Total Raised",
+    "choose_amount": "Choose Donation Amount",
+    "custom_amount": "Or enter custom amount",
+    "donate_now": "Donate Now",
+    "thank_you": "Thank You!",
+    "confirm_message": "Your generous donation of {{amount}} so'm will help save lives. Thank you for your support!",
+    "close": "Close",
+    "leaderboard": "Top Donors",
+    "sponsors": "Our Sponsors"
+  },
+  "footer": {
+    "copyright": "© 2025 Uzbekistan Red Crescent Society. All rights reserved.",
+    "about_text": "Part of the International Red Cross and Red Crescent Movement."
+  }
+}
