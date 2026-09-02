@@ -7,7 +7,8 @@
     "contact": "Aloqa",
     "donate": "Xayr-ehson",
     "live": "Jonli",
-    "volunteer": "Ko'ngilli bo'lish"
+    "volunteer": "Ko'ngilli bo'lish",
+    "academy": "O'quv markazi"
   },
   "hero": {
     "title": "O'zbekiston Qizil Yarim Oy Jamiyati",
@@ -24,7 +25,35 @@
     "stat_2_number": "14",
     "stat_2_label": "Hududiy tashkilotlar",
     "stat_3_number": "50 000+",
-    "stat_3_label": "Ko'ngillilar"
+    "stat_3_label": "Ko'ngillilar",
+    "intro_society": "Eng qadimgi gumanitar tashkilotlardan biri sifatida jamiyat barcha hududlardagi minglab ko'ngillilarni birlashtiradi, hududiy tashkilotlar tarmog'i, o'quv markazi hamda birinchi yordam, qon donorligi, favqulodda vaziyatlarga javob va jamiyat xizmati bo'yicha ko'plab dasturlarga ega."
+  },
+  "academy": {
+    "badge": "Respublika o'quv markazi",
+    "title": "Respublika O'quv-Uslubiy Markazi",
+    "intro": "Respublika O'quv-Uslubiy Markazi — O'zbekiston Qizil Yarim Oy Jamiyatining yagona o'quv, uslubiy va ta'lim muassasasi bo'lib, Jamiyat Prezidiumining 2000-yil 7-iyuldagi 7/2-sonli qarori asosida tashkil etilgan. Bu hozirgi kunda Markaziy Osiyo mintaqasidagi Milliy Qizil Yarim Oy jamiyatlari orasida ushbu formatdagi yagona markazdir.",
+    "stat_area": "Maydoni, m²",
+    "stat_floors": "Qavat",
+    "stat_students": "Yiliga o'qitiladi",
+    "stat_halls": "Konferens-zal",
+    "directions_label": "Asosiy yo'nalishlar",
+    "directions_title": "Faoliyat yo'nalishlari",
+    "dir_1": "Jamiyat xodimlarini va ko'ngillilarini o'qitish, tayyorlash va qayta tayyorlash, ustav faoliyatining asosiy yo'nalishlari bo'yicha malakasini oshirish, shu jumladan birinchi yordam ko'rsatishga o'rgatish, favqulodda vaziyatlarga tayyorgarlik ko'rish va ularni bartaraf etish, Xalqaro Qizil Xoch va Qizil Yarim Oy Harakati va Xalqaro gumanitar huquq to'g'risida bilimlarni tarqatish.",
+    "dir_2": "O'zbekiston Qizil Yarim Oy Jamiyati va hamkor tashkilotlar tomonidan tashkil etiladigan seminarlar, treninglar, prezidiumlar va boshqa tadbirlarni tashkillashtirish va o'tkazishda yordam berish.",
+    "dir_3": "Jamiyat ko'ngillilari, aholi hamda yoshlar ishtirokida xayriya, madaniy va sport tadbirlarini tashkil etish.",
+    "dir_4": "Jamiyat tashkilotlariga uslubiy, maslahat va amaliy yordam ko'rsatish, eng yaxshi tashkilotlar tajribasini umumlashtirish va samarali ish shakllarini joriy etish.",
+    "dir_5": "Ustav vazifalari doirasida innovatsion dasturlar va loyihalarni ishlab chiqish va tadbiq etishda yordam berish, Markazning moddiy-texnik, o'quv-uslubiy va moliyaviy bazasini rivojlantirish.",
+    "dir_6": "O'zbekiston QYaOJga ko'maklashish doirasida xalqaro, davlat va nodavlat tashkilotlar, xususiy kompaniyalar va turli idoralar bilan hamkorlikni amalga oshirish.",
+    "infra_label": "Infratuzilma",
+    "infra_title": "Markaz ob'ektlari",
+    "infra_desc_1": "Markaz — umumiy maydoni 4000 kvadrat metrdan ortiq bo'lgan 8 qavatli bino bo'lib, o'quvchilarni samarali o'qitish va turli tadbirlarni o'tkazish uchun barcha zarur sharoitlar yaratilgan. Markazda har yili 500 dan 1500 gacha kishi o'qitiladi.",
+    "infra_desc_2": "O'zbekiston Qizil Yarim Oy Jamiyati ko'magi bilan Markaz zamonaviy ofis va tematik uskunalar, jumladan birinchi yordam uchun zamonaviy manekenlar, taqlid materiallari, favqulodda vaziyatlar uchun texnik jihozlar va boshqa turdagi o'quv qurilmalari bilan jihozlangan.",
+    "infra_desc_3": "Binoda ikkita konferens-zal mavjud — 30 tinglovchiga mo'ljallangan kichik zal va 100 dan ortiq kishiga mo'ljallangan katta zal. Ikkinchi va uchinchi qavatlarda 14 mehmonxona xonasida 50 kishini sig'dira oladigan mehmonxona majmuasi joylashgan bo'lib, LED televizorlar, konditsionerlar va bepul Wi-Fi bilan jihozlangan, pastki qavatda esa ovqatlanish xonasi va bufet mavjud.",
+    "contacts_label": "Aloqa",
+    "contacts_title": "Bog'laning",
+    "contact_firstaid": "Birinchi yordam o'quv kurslari",
+    "contact_events": "Tadbirlarni tashkil etish",
+    "contact_hotel": "Mehmonxonani bron qilish"
   },
   "activities": {
     "label": "Faoliyatimiz",

@@ -15,8 +15,6 @@ export default function Header({ theme, toggleTheme }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const isLanding = location.pathname === '/';
-
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -25,17 +23,11 @@ export default function Header({ theme, toggleTheme }: Props) {
 
   useEffect(() => { setMobileOpen(false); }, [location.pathname]);
 
-  const landingNavItems = [
-    { href: '#about', label: t('nav.about') },
-    { href: '#activities', label: t('nav.activities') },
-    { href: '#news', label: t('nav.news') },
-    { href: '#contact', label: t('nav.contact') },
-  ];
-
   const pageNavItems = [
     { to: '/', label: t('nav.home') },
-    { to: '/live', label: t('nav.live') },
-    { to: '/donate', label: t('nav.donate') },
+    { to: '/academy', label: t('nav.academy') },
+    { to: '/news', label: t('nav.news') },
+    { to: '/about', label: t('nav.about') },
   ];
 
   return (
@@ -64,31 +56,18 @@ export default function Header({ theme, toggleTheme }: Props) {
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-1">
-              {isLanding
-                ? landingNavItems.map(item => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      className="px-3 xl:px-4 py-2 rounded-xl text-sm font-medium
-                        text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10
-                        transition-all duration-200 active:scale-95"
-                    >
-                      {item.label}
-                    </a>
-                  ))
-                : pageNavItems.map(item => (
-                    <Link
-                      key={item.to}
-                      to={item.to}
-                      className={`px-3 xl:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 active:scale-95
-                        ${location.pathname === item.to
-                          ? 'bg-primary/10 text-primary font-semibold'
-                          : 'text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10'}`}
-                    >
-                      {item.label}
-                    </Link>
-                  ))
-              }
+              {pageNavItems.map(item => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className={`px-3 xl:px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 active:scale-95
+                    ${location.pathname === item.to
+                      ? 'bg-primary/10 text-primary font-semibold'
+                      : 'text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10'}`}
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
 
             {/* Desktop Actions */}
@@ -136,33 +115,19 @@ export default function Header({ theme, toggleTheme }: Props) {
           transition-all duration-500 border border-gray-200/60 dark:border-white/10
           ${mobileOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'}`}>
           <nav className="flex flex-col gap-1">
-            {isLanding
-              ? landingNavItems.map(item => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className="px-4 py-3 rounded-2xl text-base font-medium
-                      text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10
-                      transition-all duration-200 active:scale-98"
-                  >
-                    {item.label}
-                  </a>
-                ))
-              : pageNavItems.map(item => (
-                  <Link
-                    key={item.to}
-                    to={item.to}
-                    onClick={() => setMobileOpen(false)}
-                    className={`px-4 py-3 rounded-2xl text-base font-medium transition-all duration-200
-                      ${location.pathname === item.to
-                        ? 'bg-primary/10 text-primary font-semibold'
-                        : 'text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10'}`}
-                  >
-                    {item.label}
-                  </Link>
-                ))
-            }
+            {pageNavItems.map(item => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={() => setMobileOpen(false)}
+                className={`px-4 py-3 rounded-2xl text-base font-medium transition-all duration-200
+                  ${location.pathname === item.to
+                    ? 'bg-primary/10 text-primary font-semibold'
+                    : 'text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/10'}`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
           <div className="mt-4 pt-4 border-t border-black/5 dark:border-white/10">
             <Link

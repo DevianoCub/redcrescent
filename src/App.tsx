@@ -10,6 +10,9 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import LiveBoard from './pages/LiveBoard';
 import DonatePage from './pages/DonatePage';
+import AboutPage from './pages/AboutPage';
+import NewsPage from './pages/NewsPage';
+import AcademyPage from './pages/AcademyPage';
 
 function LandingPage() {
   return (
@@ -34,6 +37,9 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/live" element={<LiveBoard />} />
           <Route path="/donate" element={<DonatePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/academy" element={<AcademyPage />} />
         </Routes>
         <Footer />
       </div>
