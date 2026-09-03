@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLocalized } from '../hooks/useLocalized';
+import { academy } from '../data/academy';
 
 const directionIcons = [
   <svg key="training" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -30,15 +32,11 @@ const directionIcons = [
 
 export default function AcademyPage() {
   const { t } = useTranslation();
+  const loc = useLocalized();
   const ref = useScrollReveal();
 
-  const directions = [t('academy.dir_1'), t('academy.dir_2'), t('academy.dir_3'), t('academy.dir_4'), t('academy.dir_5'), t('academy.dir_6')];
-
-  const contacts = [
-    { label: t('academy.contact_firstaid'), phone: '+998 78 150 81 11 / 78 150 14 88', email: 'mso@redcrescent.uz' },
-    { label: t('academy.contact_events'), phone: '+998 71 276 99 01/02', email: 'rumc@redcrescent.uz' },
-    { label: t('academy.contact_hotel'), phone: '+998 71 276 96 63', email: null },
-  ];
+  const directions = academy.directions;
+  const contacts = academy.contacts;
 
   return (
     <div className="min-h-screen pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -55,7 +53,7 @@ export default function AcademyPage() {
           {t('academy.title')}
         </h1>
         <p className="mt-3 text-gray-500 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          {t('academy.intro')}
+          {loc(academy.intro)}
         </p>
       </div>
 
@@ -84,13 +82,13 @@ export default function AcademyPage() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {directions.map((d, i) => (
-            <div key={i} className="group glass rounded-3xl p-5 sm:p-6 border border-gray-200/60 dark:border-white/10
+            <div key={d.id} className="group glass rounded-3xl p-5 sm:p-6 border border-gray-200/60 dark:border-white/10
               hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary mb-4
                 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                 {directionIcons[i % directionIcons.length]}
               </div>
-              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{d}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{loc(d.text)}</p>
             </div>
           ))}
         </div>
@@ -105,13 +103,13 @@ export default function AcademyPage() {
           </div>
           <div className="glass rounded-3xl p-6 sm:p-8 border border-gray-200/60 dark:border-white/10 max-w-3xl mx-auto">
             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-              {t('academy.infra_desc_1')}
+              {loc(academy.infra.desc_1)}
             </p>
             <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-              {t('academy.infra_desc_2')}
+              {loc(academy.infra.desc_2)}
             </p>
             <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-              {t('academy.infra_desc_3')}
+              {loc(academy.infra.desc_3)}
             </p>
           </div>
         </div>
@@ -125,7 +123,7 @@ export default function AcademyPage() {
         </div>
         <div className="grid sm:grid-cols-3 gap-4">
           {contacts.map((c, i) => (
-            <div key={i} className="glass rounded-3xl p-6 border border-gray-200/60 dark:border-white/10 text-center">
+            <div key={c.id} className="glass rounded-3xl p-6 border border-gray-200/60 dark:border-white/10 text-center">
               <div className="w-12 h-12 mx-auto rounded-2xl bg-accent-teal/10 flex items-center justify-center text-accent-teal mb-4">
                 {i === 2 ? (
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -137,7 +135,7 @@ export default function AcademyPage() {
                   </svg>
                 )}
               </div>
-              <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">{c.label}</div>
+              <div className="text-sm font-semibold text-gray-900 dark:text-white mb-1">{loc(c.label)}</div>
               <div className="text-sm text-accent-teal font-medium">{c.phone}</div>
               {c.email && (
                 <a href={`mailto:${c.email}`} className="text-xs text-gray-500 dark:text-gray-400 hover:text-primary mt-1 block">

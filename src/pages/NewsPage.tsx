@@ -1,15 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLocalized } from '../hooks/useLocalized';
+import { news } from '../data/news';
 
 export default function NewsPage() {
   const { t } = useTranslation();
+  const loc = useLocalized();
   const ref = useScrollReveal();
-
-  const items = [1, 2, 3].map(i => ({
-    title: t(`news.item_${i}.title`),
-    date: t(`news.item_${i}.date`),
-    excerpt: t(`news.item_${i}.excerpt`),
-  }));
 
   const gradients = [
     'from-red-500/10 to-orange-500/10 dark:from-red-500/20 dark:to-orange-500/20',
@@ -33,9 +30,9 @@ export default function NewsPage() {
 
       <div ref={ref} className="section-reveal">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {items.map((item, i) => (
+          {news.map((item, i) => (
             <article
-              key={i}
+              key={item.id}
               className="group glass rounded-3xl overflow-hidden border border-gray-200/60 dark:border-white/10
                 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
             >
@@ -49,13 +46,13 @@ export default function NewsPage() {
                 </div>
               </div>
               <div className="p-6">
-                <div className="text-xs font-medium text-primary mb-2">{item.date}</div>
+                <div className="text-xs font-medium text-primary mb-2">{loc(item.date)}</div>
                 <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2 leading-snug
                   group-hover:text-primary transition-colors duration-200">
-                  {item.title}
+                  {loc(item.title)}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
-                  {item.excerpt}
+                  {loc(item.excerpt)}
                 </p>
               </div>
             </article>

@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { useLocalized } from '../hooks/useLocalized';
+import { contactInfo } from '../data/contacts';
 import { useState } from 'react';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const loc = useLocalized();
   const ref = useScrollReveal();
   const [submitted, setSubmitted] = useState(false);
 
@@ -94,7 +97,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white">{t('contact.address')}</h4>
-                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{t('contact.address_text')}</p>
+                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{loc(contactInfo.address)}</p>
                 </div>
               </div>
             </div>
@@ -109,7 +112,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-gray-900 dark:text-white">{t('contact.phone')}</h4>
-                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{t('contact.phone_text')}</p>
+                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{loc(contactInfo.phone)}</p>
                 </div>
               </div>
             </div>

@@ -26,34 +26,25 @@
     "stat_2_label": "Regional Offices",
     "stat_3_number": "50K+",
     "stat_3_label": "Volunteers",
-    "intro_society": "As one of the oldest humanitarian organizations, the society unites thousands of volunteers across all regions, operating a network of regional offices, a training center, and numerous programs in first aid, blood donation, emergency response, and community service."
+    "intro_society": "As one of the oldest humanitarian organizations, the society unites thousands of volunteers across all regions, operating a network of regional offices, a training center, and numerous programs in first aid, blood donation, emergency response, and community service.",
+    "history_label": "History",
+    "history_title": "A Century of Compassion",
+    "laws_label": "Legal Framework",
+    "laws_title": "Legal Basis of Activity"
   },
   "academy": {
     "badge": "Republican Training Center",
     "title": "Republican Training & Methodological Center",
-    "intro": "The Republican Training and Methodological Center is a unified training and methodological institution of the Uzbekistan Red Crescent Society, established by decision of the Society's Presidium No. 7/2 of July 7, 2000. It is the only center of this format among National Red Crescent Societies in Central Asia.",
     "stat_area": "Area, m²",
     "stat_floors": "Floors",
     "stat_students": "People trained per year",
     "stat_halls": "Conference halls",
     "directions_label": "Main Areas",
     "directions_title": "Areas of Activity",
-    "dir_1": "Training, preparation and retraining of Society staff and volunteers, improving qualifications in the main areas of the Society's charter, including first aid training, emergency preparedness and response, knowledge about the International Red Cross and Red Crescent Movement and International Humanitarian Law.",
-    "dir_2": "Assisting in organizing and holding seminars, trainings, presidium meetings and other events of the Uzbekistan Red Crescent Society and partner organizations.",
-    "dir_3": "Organizing charity, cultural and sports events with the participation of Society volunteers, the population and young people.",
-    "dir_4": "Providing methodological, consultative and practical assistance to the Society's organizations, generalizing the experience of the best organizations and introducing effective working methods.",
-    "dir_5": "Supporting the development and implementation of innovative programs and projects within the charter's objectives, and developing the Center's material, technical and financial base.",
-    "dir_6": "Cooperating with international, state and non-governmental organizations, private companies and agencies to support the Society's humanitarian activities.",
     "infra_label": "Infrastructure",
     "infra_title": "Center Facilities",
-    "infra_desc_1": "The Center is an 8-storey building with a total area of more than 4000 square meters, where all necessary conditions for effective training and holding various events have been created. Every year, from 500 to 1500 people are trained at the Center.",
-    "infra_desc_2": "With the support of the Uzbekistan Red Crescent Society, the Center is equipped with modern office and thematic equipment, including modern first aid mannequins, simulation materials, technical equipment for emergencies and other types of training equipment.",
-    "infra_desc_3": "The building has two conference halls - a small hall for 30 listeners and a large hall for more than 100 people. On the second and third floors there is a hotel complex accommodating 50 people in 14 rooms with LED TVs, air conditioning and free Wi-Fi, and on the lower floor - a dining room and buffet.",
     "contacts_label": "Contacts",
-    "contacts_title": "Get in Touch",
-    "contact_firstaid": "First Aid Training Courses",
-    "contact_events": "Events Organization",
-    "contact_hotel": "Hotel Booking"
+    "contacts_title": "Get in Touch"
   },
   "activities": {
     "label": "Our Activities",
@@ -85,22 +76,7 @@
   },
   "news": {
     "label": "Latest News",
-    "title": "Stay Informed",
-    "item_1": {
-      "title": "Emergency Relief in Flood-Affected Areas",
-      "date": "August 15, 2025",
-      "excerpt": "Rapid response teams deployed to provide humanitarian assistance to communities affected by seasonal flooding."
-    },
-    "item_2": {
-      "title": "Blood Donation Campaign Results",
-      "date": "August 10, 2025",
-      "excerpt": "National blood donation drive collected over 5,000 units, exceeding targets across all regions."
-    },
-    "item_3": {
-      "title": "New Volunteer Training Program",
-      "date": "August 5, 2025",
-      "excerpt": "Launch of enhanced volunteer training program covering first aid, emergency response, and community health."
-    }
+    "title": "Stay Informed"
   },
   "contact": {
     "label": "Contact Us",
@@ -110,9 +86,7 @@
     "message": "Your Message",
     "send": "Send Message",
     "address": "Address",
-    "address_text": "12 Amir Temur Avenue, Tashkent, Uzbekistan",
     "phone": "Phone",
-    "phone_text": "+998 71 236 50 48",
     "success": "Message sent successfully!"
   },
   "live": {
