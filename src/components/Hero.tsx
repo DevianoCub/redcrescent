@@ -6,7 +6,18 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 bg-primary dark:bg-transparent">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16 bg-gray-950">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/photos/volunteers-hero.jpg"
+          alt=""
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/75 dark:from-black/85 dark:via-black/65 dark:to-black/85"/>
+        <div className="absolute inset-0 bg-primary/25 dark:bg-primary/15 mix-blend-multiply"/>
+      </div>
+
       {/* Background large text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
         <motion.span

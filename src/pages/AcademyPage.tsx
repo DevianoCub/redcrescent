@@ -57,6 +57,18 @@ export default function AcademyPage() {
         </p>
       </div>
 
+      {/* Banner */}
+      <div className="relative h-52 sm:h-64 rounded-3xl overflow-hidden mb-12 max-w-4xl mx-auto">
+        <img
+          src="/photos/first-aid-training-3.jpg"
+          alt=""
+          loading="lazy"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent"/>
+        <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"/>
+      </div>
+
       {/* Stats */}
       <div ref={ref} className="section-reveal mb-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">

@@ -5,6 +5,7 @@ export interface NewsItem {
   title: Localized;
   date: Localized;
   excerpt: Localized;
+  image?: string;
 }
 
 export const news: NewsItem[] = [
@@ -25,6 +26,7 @@ export const news: NewsItem[] = [
       ru: 'Группы быстрого реагирования направлены для оказания гуманитарной помощи пострадавшим от сезонного наводнения.',
       uz: 'Mavsumiy suv toshqinidan zararlangan aholiga insonparvarlik yordami ko\'rsatish uchun tezkor javob guruhlari yuborildi.',
     },
+    image: '/photos/aid-distribution.jpg',
   },
   {
     id: 'blood-donation',
@@ -43,6 +45,7 @@ export const news: NewsItem[] = [
       ru: 'Всенародная акция по донорству крови собрала более 5 000 единиц, превзойдя цели по всем регионам.',
       uz: 'Umumxalq qon donorlik aktsiyasi barcha viloyatlar bo\'ylab 5 000 dan ortiq birlik to\'plab, maqsadlarga erishdi.',
     },
+    image: '/photos/blood-donation.jpg',
   },
   {
     id: 'volunteer-training',
@@ -61,5 +64,6 @@ export const news: NewsItem[] = [
       ru: 'Запуск обновлённой программы обучения волонтёров, включающей первую помощь, реагирование на ЧС и общественное здоровье.',
       uz: 'Birinchi yordam, favqulodda vaziyatlarga javob va jamiyat salomatligini o\'z ichiga olgan yangilangan ko\'ngillilar o\'quv dasturining ishga tushirilishi.',
     },
+    image: '/photos/first-aid-training.jpg',
   },
 ];

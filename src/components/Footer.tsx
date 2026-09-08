@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { photoCredits } from '../data/photoCredits';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -55,7 +56,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-200 dark:border-white/10 text-center">
+        <div className="pt-8 border-t border-gray-200 dark:border-white/10">
+          <div className="text-center">
+            <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-3">Photos © respective authors</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500 leading-relaxed max-w-3xl mx-auto flex flex-wrap justify-center gap-x-3 gap-y-1">
+              {photoCredits.map((c) => (
+                <a
+                  key={c.file}
+                  href={c.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline hover:text-primary hover:underline transition-colors"
+                  title={`${c.title} — ${c.author} (${c.license})`}
+                >
+                  {c.title}
+                </a>
+              ))}
+            </p>
+          </div>
+        </div>
+
+        <div className="pt-6 text-center">
           <p className="text-xs text-gray-400 dark:text-gray-500">{t('footer.copyright')}</p>
         </div>
       </div>

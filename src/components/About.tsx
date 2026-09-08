@@ -46,6 +46,20 @@ export default function About() {
               ))}
             </div>
 
+            {/* Visual */}
+            <div className="relative mt-10">
+              <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
+                <img
+                  src="/photos/volunteers-group.jpg"
+                  alt=""
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"/>
+                <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"/>
+              </div>
+            </div>
+
             {/* Decorative element */}
             <div className="absolute -z-10 -bottom-6 -right-6 w-48 h-48 rounded-full
               bg-primary/5 dark:bg-primary/10 blur-2xl"/>

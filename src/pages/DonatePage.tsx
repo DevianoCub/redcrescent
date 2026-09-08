@@ -31,6 +31,18 @@ export default function DonatePage() {
             {totalDonations.toLocaleString()} so'm
           </span>
         </div>
+
+        {/* Banner */}
+        <div className="relative h-48 sm:h-56 max-w-3xl mx-auto mt-8 rounded-3xl overflow-hidden">
+          <img
+            src="/photos/blood-drive.jpg"
+            alt=""
+            loading="lazy"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"/>
+          <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"/>
+        </div>
       </div>
 
       {/* Main content */}

@@ -8,10 +8,10 @@ export default function NewsPage() {
   const loc = useLocalized();
   const ref = useScrollReveal();
 
-  const gradients = [
-    'from-red-500/10 to-orange-500/10 dark:from-red-500/20 dark:to-orange-500/20',
-    'from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20',
-    'from-green-500/10 to-emerald-500/10 dark:from-green-500/20 dark:to-emerald-500/20',
+  const fallbackGradients = [
+    'bg-gradient-to-br from-red-500/10 to-orange-500/10 dark:from-red-500/20 dark:to-orange-500/20',
+    'bg-gradient-to-br from-blue-500/10 to-cyan-500/10 dark:from-blue-500/20 dark:to-cyan-500/20',
+    'bg-gradient-to-br from-green-500/10 to-emerald-500/10 dark:from-green-500/20 dark:to-emerald-500/20',
   ];
 
   return (
@@ -36,13 +36,23 @@ export default function NewsPage() {
               className="group glass rounded-3xl overflow-hidden border border-gray-200/60 dark:border-white/10
                 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
             >
-              <div className={`h-40 bg-gradient-to-br ${gradients[i]} flex items-center justify-center`}>
-                <div className="w-16 h-16 rounded-full bg-white/50 dark:bg-white/10
-                  flex items-center justify-center backdrop-blur-sm
-                  group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
+              <div className="relative h-40 overflow-hidden bg-gray-900">
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt=""
+                    loading="lazy"
+                    className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : null}
+                <div className={`absolute inset-0 ${item.image ? 'bg-gradient-to-t from-black/55 via-black/10 to-black/20' : fallbackGradients[i % 3]}`}/>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-white/70 dark:bg-white/10 backdrop-blur-sm
+                    flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-8 h-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1m2 13a2 2 0 0 1-2-2V7m2 13a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div className="p-6">

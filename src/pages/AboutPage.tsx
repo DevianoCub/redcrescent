@@ -75,6 +75,21 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+
+            {/* Visual */}
+            <div className="relative mt-10">
+              <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
+                <img
+                  src="/photos/humanitarian-assistance.jpg"
+                  alt=""
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"/>
+                <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"/>
+              </div>
+            </div>
+
             <div className="absolute -z-10 -bottom-6 -right-6 w-48 h-48 rounded-full
               bg-primary/5 dark:bg-primary/10 blur-2xl"/>
           </div>
@@ -90,6 +105,18 @@ export default function AboutPage() {
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
             {t('about.history_title')}
           </h2>
+        </div>
+
+        {/* Archival photo */}
+        <div className="relative max-w-3xl mx-auto mb-12 rounded-3xl overflow-hidden h-56 sm:h-64">
+          <img
+            src="/photos/history-archival.jpg"
+            alt=""
+            loading="lazy"
+            className="w-full h-full object-cover sepia-[0.25]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"/>
+          <div className="absolute inset-0 bg-primary/15 mix-blend-multiply"/>
         </div>
 
         <div className="relative max-w-3xl mx-auto">

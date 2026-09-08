@@ -36,12 +36,12 @@ export default function Activities() {
   const ref = useScrollReveal();
 
   const items = [
-    { key: 'medical', icon: icons[0] },
-    { key: 'emergency', icon: icons[1] },
-    { key: 'first_aid', icon: icons[2] },
-    { key: 'donation', icon: icons[3] },
-    { key: 'volunteer', icon: icons[4] },
-    { key: 'law', icon: icons[5] },
+    { key: 'medical', icon: icons[0], photo: '/photos/blood-lab.jpg' },
+    { key: 'emergency', icon: icons[1], photo: '/photos/aid-operations.jpg' },
+    { key: 'first_aid', icon: icons[2], photo: '/photos/first-aid-training-2.jpg' },
+    { key: 'donation', icon: icons[3], photo: '/photos/blood-donation.jpg' },
+    { key: 'volunteer', icon: icons[4], photo: '/photos/volunteers-team.jpg' },
+    { key: 'law', icon: icons[5], photo: '/photos/history-archival.jpg' },
   ];
 
   return (
@@ -60,20 +60,32 @@ export default function Activities() {
           {items.map((item) => (
             <div
               key={item.key}
-              className="group glass rounded-3xl p-7 border border-gray-200/60 dark:border-white/10
+              className="group glass rounded-3xl overflow-hidden border border-gray-200/60 dark:border-white/10
                 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 dark:bg-primary/20
-                flex items-center justify-center text-primary mb-5
-                group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                {item.icon}
+              <div className="relative h-36 overflow-hidden bg-gray-900">
+                <img
+                  src={item.photo}
+                  alt=""
+                  loading="lazy"
+                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent"/>
+                <div className="absolute inset-0 bg-primary/10 mix-blend-multiply"/>
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                {t(`activities.${item.key}.title`)}
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                {t(`activities.${item.key}.desc`)}
-              </p>
+              <div className="p-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 dark:bg-primary/20
+                  flex items-center justify-center text-primary mb-5 -mt-0
+                  group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  {t(`activities.${item.key}.title`)}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                  {t(`activities.${item.key}.desc`)}
+                </p>
+              </div>
             </div>
           ))}
         </div>
