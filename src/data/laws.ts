@@ -4,11 +4,14 @@ export interface LawDoc {
   id: string;
   title: Localized;
   meta: Localized;
+  /** Path to the PDF under public/docs/laws (downloadable, no code changes needed to replace the file) */
+  pdf: string;
 }
 
 export const laws: LawDoc[] = [
   {
     id: 'presidential-decree',
+    pdf: '/docs/laws/presidential-decree-1992.pdf',
     title: {
       en: "Decree of the President of the Republic of Uzbekistan 'On the Red Crescent Society of Uzbekistan'",
       ru: 'Указ Президента Республики Узбекистан «Об Обществе Красного Полумесяца в Узбекистане»',
@@ -22,6 +25,7 @@ export const laws: LawDoc[] = [
   },
   {
     id: 'emblem-law',
+    pdf: '/docs/laws/emblem-law.pdf',
     title: {
       en: "Law of the Republic of Uzbekistan 'On the Use and Protection of Red Crescent and Red Cross Emblems'",
       ru: 'Закон Республики Узбекистан «Об использовании и защите эмблем красного полумесяца и красного креста»',
@@ -35,6 +39,7 @@ export const laws: LawDoc[] = [
   },
   {
     id: 'charity',
+    pdf: '/docs/laws/charity-law.pdf',
     title: {
       en: "Law of the Republic of Uzbekistan 'On Charity'",
       ru: 'Закон Республики Узбекистан «О благотворительности»',
@@ -48,6 +53,7 @@ export const laws: LawDoc[] = [
   },
   {
     id: 'public-associations',
+    pdf: '/docs/laws/public-associations-law.pdf',
     title: {
       en: "Law of the Republic of Uzbekistan 'On Public Associations'",
       ru: 'Закон Республики Узбекистан «Об общественных объединениях»',
@@ -61,6 +67,7 @@ export const laws: LawDoc[] = [
   },
   {
     id: 'ngo-guarantees',
+    pdf: '/docs/laws/ngo-guarantees-law.pdf',
     title: {
       en: "Law of the Republic of Uzbekistan 'On Guarantees of Activities of Non-Governmental Non-Profit Organizations'",
       ru: 'Закон Республики Узбекистан «О гарантиях деятельности негосударственных некоммерческих организаций»',

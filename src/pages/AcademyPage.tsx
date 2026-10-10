@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useLocalized } from '../hooks/useLocalized';
 import { academy } from '../data/academy';
-import { photos } from '../data/site';
+import { photos, volonLeaderCaption } from '../data/site';
 
 const directionIcons = [
   <svg key="training" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -124,6 +124,27 @@ export default function AcademyPage() {
             <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed">
               {loc(academy.infra.desc_3)}
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Volunteers leader */}
+      <div className="mb-12">
+        <div className="relative rounded-3xl overflow-hidden max-w-4xl mx-auto">
+          <img
+            src={photos.volonLeader}
+            alt=""
+            loading="lazy"
+            className="w-full h-64 sm:h-80 object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+          <div className="absolute bottom-0 inset-x-0 p-6 sm:p-8">
+            <div className="text-lg sm:text-xl font-semibold text-white">
+              {t('academy.leader_title')}
+            </div>
+            <div className="mt-1 text-sm text-white/80">
+              {loc(volonLeaderCaption)}
+            </div>
           </div>
         </div>
       </div>

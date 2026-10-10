@@ -80,7 +80,7 @@ export default function AboutPage() {
             <div className="relative mt-10">
               <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
                 <img
-                  src="/photos/humanitarian-assistance.jpg"
+                  src="/photos/real/team-office-front-01.jpg"
                   alt=""
                   loading="lazy"
                   className="w-full h-full object-cover"
@@ -110,10 +110,10 @@ export default function AboutPage() {
         {/* Archival photo */}
         <div className="relative max-w-3xl mx-auto mb-12 rounded-3xl overflow-hidden h-56 sm:h-64">
           <img
-            src="/photos/history-archival.jpg"
+            src="/photos/real/volon-stretcher-drill-03.jpg"
             alt=""
             loading="lazy"
-            className="w-full h-full object-cover sepia-[0.25]"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"/>
           <div className="absolute inset-0 bg-primary/15 mix-blend-multiply"/>
@@ -179,6 +179,17 @@ export default function AboutPage() {
               <p className="mt-auto pt-3 text-sm text-gray-500 dark:text-gray-400 font-medium">
                 {loc(law.meta)}
               </p>
+              <a
+                href={law.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary-light transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                </svg>
+                {t('about.download_pdf')}
+              </a>
             </div>
           ))}
         </div>

@@ -18,10 +18,8 @@ export interface SocialLinks {
 
 export const socials: SocialLinks = {
   facebook: 'https://www.facebook.com/UzbekistanRedCrescent',
-  // TODO: replace with the new official channel URL when provided
-  telegram: 'https://t.me/uzredcrescent',
-  // TODO: replace with the real Instagram handle when provided
-  instagram: 'https://www.instagram.com/uzredcrescent',
+  telegram: 'https://t.me/uzbqizilyarimoy',
+  instagram: 'https://www.instagram.com/qizilyarimoy.uzb',
 };
 
 // TODO: replace '#' with real merchant / fundraising links from Click, Payme, Uzum
@@ -53,6 +51,8 @@ export const photos = {
   about: '/photos/real/team-office-group-03.jpg',
   donateBanner: '/photos/real/donate-food-package-05.jpg',
   academyBanner: '/photos/real/volon-first-aid-manikin-02.jpg',
+  // Group photo with the volunteers' leader (name editable below, no code needed later via /admin)
+  volonLeader: '/photos/real/volon-leader-group-11.jpg',
   activities: {
     medical: '/photos/real/donate-food-package-05.jpg',
     emergency: '/photos/real/volon-tent-setup-03.jpg',
@@ -65,5 +65,17 @@ export const photos = {
     '/photos/real/volon-stadium-first-aid-06.jpg',
     '/photos/real/donate-home-care-02.jpg',
     '/photos/real/seminar-yard-meeting-02.jpg',
+    '/photos/real/donate-home-visit-06.jpg',
+    '/photos/real/volon-evacuation-bus-09.jpg',
+    '/photos/real/volon-youth-hall-10.jpg',
+    '/photos/real/donate-distribution-event-08.jpg',
+    '/photos/real/seminar-university-group-13.jpg',
   ],
 } as const;
+
+// TODO: вписать имя и должность лидера волонтёров (пришлёт владелец)
+export const volonLeaderCaption = {
+  ru: 'Лидер волонтёров Общества с командой',
+  uz: 'Jamiyat ko‘ngillilari yetakchisi jamoa bilan',
+  en: 'The Society volunteers leader with the team',
+};

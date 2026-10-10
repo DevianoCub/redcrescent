@@ -12,7 +12,7 @@
   },
   "hero": {
     "title": "O'zbekiston Qizil Yarim Oy Jamiyati",
-    "subtitle": "O'zbekistonda eng yoshi ulug' tashkilotlardan biri — 1928-yildan beri insonparvarlik yordami, favqulodda vaziyatlarga javob va jamiyatga xizmat ko'rsatib kelmoqda.",
+    "subtitle": "O'zbekistonda eng yoshi ulug' tashkilotlardan biri — 1925-yildan beri insonparvarlik yordami, favqulodda vaziyatlarga javob va jamiyatga xizmat ko'rsatib kelmoqda.",
     "cta_donate": "Xayr-ehson qilish",
     "cta_volunteer": "Ko'ngilli bo'lish"
   },
@@ -30,7 +30,8 @@
     "history_label": "Tarix",
     "history_title": "Mehribonlik asri",
     "laws_label": "Qonunchilik bazasi",
-    "laws_title": "Faoliyatning huquqiy asoslari"
+    "laws_title": "Faoliyatning huquqiy asoslari",
+    "download_pdf": "PDF yuklab olish"
   },
   "academy": {
     "badge": "Respublika o'quv markazi",
@@ -44,7 +45,8 @@
     "infra_label": "Infratuzilma",
     "infra_title": "Markaz ob'ektlari",
     "contacts_label": "Aloqa",
-    "contacts_title": "Bog'laning"
+    "contacts_title": "Bog'laning",
+    "leader_title": "Ko'ngillilarimiz"
   },
   "activities": {
     "label": "Faoliyatimiz",

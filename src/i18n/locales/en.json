@@ -30,7 +30,8 @@
     "history_label": "History",
     "history_title": "A Century of Compassion",
     "laws_label": "Legal Framework",
-    "laws_title": "Legal Basis of Activity"
+    "laws_title": "Legal Basis of Activity",
+    "download_pdf": "Download PDF"
   },
   "academy": {
     "badge": "Republican Training Center",
@@ -44,7 +45,8 @@
     "infra_label": "Infrastructure",
     "infra_title": "Center Facilities",
     "contacts_label": "Contacts",
-    "contacts_title": "Get in Touch"
+    "contacts_title": "Get in Touch",
+    "leader_title": "Our volunteers"
   },
   "activities": {
     "label": "Our Activities",
