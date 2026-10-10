@@ -1,0 +1,20 @@
+{
+  "contacts": {
+    "address_ru": "г. Ташкент, ул. Юсуф Хос Ходжиб, 30",
+    "address_uz": "Toshkent sh., Yusuf Xos Xojib ko'chasi, 30",
+    "address_en": "30 Yusuf Khos Khojib str., Tashkent",
+    "phone": "+998 78 150-81-11",
+    "fax": "+998 71 256-18-01",
+    "email": "secretariat@redcrescent.uz"
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/UzbekistanRedCrescent",
+    "telegram": "https://t.me/uzredcrescent",
+    "instagram": "https://www.instagram.com/uzredcrescent"
+  },
+  "donate_links": [
+    { "id": "click", "name": "Click", "url": "#" },
+    { "id": "payme", "name": "Payme", "url": "#" },
+    { "id": "uzum", "name": "Uzum Bank", "url": "#" }
+  ]
+}

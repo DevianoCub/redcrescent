@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { photos } from '../data/site';
 
 const icons = [
   // Medical
@@ -36,12 +37,12 @@ export default function Activities() {
   const ref = useScrollReveal();
 
   const items = [
-    { key: 'medical', icon: icons[0], photo: '/photos/blood-lab.jpg' },
-    { key: 'emergency', icon: icons[1], photo: '/photos/aid-operations.jpg' },
-    { key: 'first_aid', icon: icons[2], photo: '/photos/first-aid-training-2.jpg' },
-    { key: 'donation', icon: icons[3], photo: '/photos/blood-donation.jpg' },
-    { key: 'volunteer', icon: icons[4], photo: '/photos/volunteers-team.jpg' },
-    { key: 'law', icon: icons[5], photo: '/photos/history-archival.jpg' },
+    { key: 'medical', icon: icons[0], photo: photos.activities.medical },
+    { key: 'emergency', icon: icons[1], photo: photos.activities.emergency },
+    { key: 'first_aid', icon: icons[2], photo: photos.activities.first_aid },
+    { key: 'donation', icon: icons[3], photo: photos.activities.donation },
+    { key: 'volunteer', icon: icons[4], photo: photos.activities.volunteer },
+    { key: 'law', icon: icons[5], photo: photos.activities.law },
   ];
 
   return (

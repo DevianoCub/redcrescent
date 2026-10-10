@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useLocalized } from '../hooks/useLocalized';
 import { academy } from '../data/academy';
+import { photos } from '../data/site';
 
 const directionIcons = [
   <svg key="training" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
@@ -60,7 +61,7 @@ export default function AcademyPage() {
       {/* Banner */}
       <div className="relative h-52 sm:h-64 rounded-3xl overflow-hidden mb-12 max-w-4xl mx-auto">
         <img
-          src="/photos/first-aid-training-3.jpg"
+          src={photos.academyBanner}
           alt=""
           loading="lazy"
           className="w-full h-full object-cover"

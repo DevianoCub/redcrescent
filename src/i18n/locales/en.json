@@ -114,10 +114,14 @@
     "confirm_message": "Your generous donation of {{amount}} so'm will help save lives. Thank you for your support!",
     "close": "Close",
     "leaderboard": "Top Donors",
-    "sponsors": "Our Sponsors"
+    "sponsors": "Our Sponsors",
+    "choose_method": "Choose a payment method",
+    "link_soon": "Link coming soon",
+    "transparency": "Donations support the humanitarian programs of the Uzbekistan Red Crescent Society. Reports will be published on this site."
   },
   "footer": {
     "copyright": "© 2025 Uzbekistan Red Crescent Society. All rights reserved.",
-    "about_text": "Part of the International Red Cross and Red Crescent Movement."
+    "about_text": "Part of the International Red Cross and Red Crescent Movement.",
+    "photos_note": "Photos: Uzbekistan Red Crescent Society."
   }
 }

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { photos } from '../data/site';
 
 export default function About() {
   const { t } = useTranslation();
@@ -50,7 +51,7 @@ export default function About() {
             <div className="relative mt-10">
               <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
                 <img
-                  src="/photos/volunteers-group.jpg"
+                  src={photos.about}
                   alt=""
                   loading="lazy"
                   className="w-full h-full object-cover"

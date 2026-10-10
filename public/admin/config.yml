@@ -1,0 +1,78 @@
+# Decap CMS config — редактирование без кода через /admin
+# Backend git-gateway требует настройки на хостинге (Netlify/Vercel + GitHub).
+# До подключения backend работает editorial_workflow + локальные JSON в public/content.
+backend:
+  name: git-gateway
+  branch: main
+
+locale: ru
+media_folder: public/photos/real
+public_folder: /photos/real
+
+collections:
+  - name: site
+    label: 'Сайт: контакты, соцсети, донаты'
+    files:
+      - name: site
+        label: Общие настройки
+        file: public/content/site.json
+        fields:
+          - { name: contacts, label: Контакты, widget: object, fields: [
+            { name: address_ru, label: 'Адрес (RU)', widget: string },
+            { name: address_uz, label: 'Адрес (UZ)', widget: string },
+            { name: address_en, label: 'Адрес (EN)', widget: string },
+            { name: phone, label: Телефон, widget: string },
+            { name: fax, label: Факс, widget: string },
+            { name: email, label: Email, widget: string }] }
+          - { name: socials, label: Соцсети, widget: object, fields: [
+            { name: facebook, label: Facebook URL, widget: string },
+            { name: telegram, label: Telegram URL, widget: string },
+            { name: instagram, label: Instagram URL, widget: string }] }
+          - { name: donate_links, label: 'Ссылки оплаты', widget: list, fields: [
+            { name: id, label: ID, widget: select, options: [click, payme, uzum] },
+            { name: name, label: Название, widget: string },
+            { name: url, label: URL, widget: string }] }
+
+  - name: news
+    label: Новости
+    folder: public/content/news
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    extension: json
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title_ru, label: 'Заголовок (RU)', widget: string }
+      - { name: title_uz, label: 'Заголовок (UZ)', widget: string }
+      - { name: title_en, label: 'Заголовок (EN)', widget: string }
+      - { name: date_ru, label: 'Дата (RU)', widget: string }
+      - { name: excerpt_ru, label: 'Анонс (RU)', widget: text }
+      - { name: excerpt_uz, label: 'Анонс (UZ)', widget: text }
+      - { name: excerpt_en, label: 'Анонс (EN)', widget: text }
+      - { name: image, label: Фото, widget: image, required: false }
+
+  - name: laws
+    label: Законы и документы
+    folder: public/content/laws
+    create: true
+    slug: '{{slug}}'
+    extension: json
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: title_ru, label: 'Название (RU)', widget: string }
+      - { name: title_uz, label: 'Название (UZ)', widget: string }
+      - { name: title_en, label: 'Название (EN)', widget: string }
+      - { name: pdf, label: 'PDF файл', widget: file, required: false }
+
+  - name: offices
+    label: Региональные отделения
+    folder: public/content/offices
+    create: true
+    slug: '{{slug}}'
+    extension: json
+    fields:
+      - { name: id, label: ID, widget: string }
+      - { name: city, label: Город, widget: string }
+      - { name: address, label: Адрес, widget: string }
+      - { name: phone, label: Телефон, widget: string }
+      - { name: rais, label: Председатель, widget: string }
+      - { name: director, label: Исполнительный директор, widget: string }

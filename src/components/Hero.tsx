@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { photos } from '../data/site';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/photos/volunteers-hero.jpg"
+          src={photos.hero}
           alt=""
           className="w-full h-full object-cover object-center"
         />

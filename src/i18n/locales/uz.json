@@ -114,10 +114,14 @@
     "confirm_message": "Sizning {{amount}} so'm miqdoridagi saxiy xayr-ehsoningiz hayotni saqlab qolishga yordam beradi. Qo'llab-quvvatlashingiz uchun rahmat!",
     "close": "Yopish",
     "leaderboard": "Eng yaxshi homiylar",
-    "sponsors": "Bizning homiylar"
+    "sponsors": "Bizning homiylar",
+    "choose_method": "To'lov usulini tanlang",
+    "link_soon": "Havola tez orada qo'shiladi",
+    "transparency": "Xayr-ehsonlar O'zbekiston Qizil Yarim Oy Jamiyatining insonparvarlik dasturlariga yo'naltiriladi. Hisobotlar saytda e'lon qilinadi."
   },
   "footer": {
     "copyright": "© 2025 O'zbekiston Qizil Yarim Oy Jamiyati. Barcha huquqlar himoyalangan.",
-    "about_text": "Xalqaro Qizil Xoch va Qizil Yarim Oy Harakatining bir qismi."
+    "about_text": "Xalqaro Qizil Xoch va Qizil Yarim Oy Harakatining bir qismi.",
+    "photos_note": "Fotolar: O'zbekiston Qizil Yarim Oy Jamiyati."
   }
 }
