@@ -1,10 +1,16 @@
-# Decap CMS config — редактирование без кода через /admin
-# Backend git-gateway требует настройки на хостинге (Netlify/Vercel + GitHub).
+# Decap CMS config — редактирование без кода.
+# Backend: github + собственный OAuth-релей (code→token). Работает и на Netlify, и на Coolify.
+# Версия под Netlify (git-gateway + Netlify Identity) живёт в ветке `netlify`.
 # Контент лежит в src/content/*.json — эти файлы читает сайт (src/lib/content.ts).
 
 backend:
-  name: git-gateway
+  name: github
+  repo: DevianoCub/redcrescent
   branch: main
+  # TODO: URL OAuth-релея после деплоя на Coolify (пример: https://oauth.redcrescent.uz).
+  # Релей — маленький сервис, обменивающий GitHub code → access_token (client_secret нельзя держать во фронте).
+  base_url: https://oauth.example.com
+  auth_endpoint: auth
 
 locale: ru
 media_folder: public/photos/real
