@@ -1,8 +1,18 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { socials } from '../lib/content';
 
 export default function Footer() {
   const { t } = useTranslation();
+
+  const pageLinks = [
+    { to: '/', label: t('nav.home') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/news', label: t('nav.news') },
+    { to: '/academy', label: t('nav.academy') },
+    { to: '/live', label: t('nav.live') },
+    { to: '/donate', label: t('nav.donate') },
+  ];
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-16 transition-colors duration-500">
@@ -25,16 +35,22 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">{t('nav.about')}</h4>
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">{t('footer.sections')}</h4>
             <ul className="space-y-2.5">
-              <li><a href="#about" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">{t('nav.about')}</a></li>
-              <li><a href="#activities" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">{t('nav.activities')}</a></li>
-              <li><a href="#news" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">{t('nav.news')}</a></li>
-              <li><a href="#contact" className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">{t('nav.contact')}</a></li>
+              {pageLinks.map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    className="text-sm text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Social — URLs editable via /admin (public/content/site.json) */}
+          {/* Social — URLs editable via the CMS (src/content/site.json) */}
           <div>
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">Social</h4>
             <div className="flex gap-3">

@@ -116,6 +116,7 @@ collections:
               - { name: city, label: Город, widget: string }
               - { name: address, label: Адрес, widget: string }
               - { name: phone, label: Телефон, widget: string }
+              - { name: email, label: Email, widget: string, required: false }
               - { name: rais, label: Председатель, widget: string }
               - { name: director, label: 'Исполнительный директор', widget: string }
               - { name: lat, label: Широта, widget: number, value_type: float }

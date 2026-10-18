@@ -106,6 +106,7 @@
     "rais": "Chairman",
     "director": "Executive Director",
     "phone": "Phone",
+    "email": "Email",
     "address": "Address"
   },
   "donate": {
@@ -128,6 +129,7 @@
   "footer": {
     "copyright": "© 2025 Uzbekistan Red Crescent Society. All rights reserved.",
     "about_text": "Part of the International Red Cross and Red Crescent Movement.",
-    "photos_note": "Photos: Uzbekistan Red Crescent Society."
+    "photos_note": "Photos: Uzbekistan Red Crescent Society.",
+    "sections": "Sections"
   }
 }

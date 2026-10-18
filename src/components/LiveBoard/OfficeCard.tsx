@@ -75,6 +75,23 @@ export default function OfficeCard({ office, isActive, expanded, onClick }: Prop
             </div>
           </div>
 
+          {/* Email */}
+          {office.email && (
+            <div className="flex items-start gap-2">
+              <svg className="w-4 h-4 text-primary mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-10 5L2 7"/>
+              </svg>
+              <div>
+                <div className="text-xs font-semibold text-gray-700 dark:text-gray-300">{t('live.email')}</div>
+                <a href={`mailto:${office.email}`}
+                  className="text-xs text-accent-teal hover:underline mt-0.5 break-all">
+                  {office.email}
+                </a>
+              </div>
+            </div>
+          )}
+
           {/* Rais */}
           <div className="flex items-start gap-2">
             <svg className="w-4 h-4 text-primary mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
