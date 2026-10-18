@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /cms-739d90/
+Disallow: /cms-739d90

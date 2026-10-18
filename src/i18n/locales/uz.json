@@ -106,6 +106,7 @@
     "rais": "Rais",
     "director": "Ijrochi direktor",
     "phone": "Telefon",
+    "email": "Email",
     "address": "Manzil"
   },
   "donate": {
@@ -128,6 +129,7 @@
   "footer": {
     "copyright": "© 2025 O'zbekiston Qizil Yarim Oy Jamiyati. Barcha huquqlar himoyalangan.",
     "about_text": "Xalqaro Qizil Xoch va Qizil Yarim Oy Harakatining bir qismi.",
-    "photos_note": "Fotolar: O'zbekiston Qizil Yarim Oy Jamiyati."
+    "photos_note": "Fotolar: O'zbekiston Qizil Yarim Oy Jamiyati.",
+    "sections": "Bo'limlar"
   }
 }

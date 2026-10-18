@@ -8,6 +8,7 @@ export interface Office {
   city: string;
   address: string;
   phone: string;
+  email?: string;
   rais: string;
   director: string;
   lat: number;
