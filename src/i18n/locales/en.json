@@ -22,7 +22,6 @@
     "description": "The Uzbekistan Red Crescent Society has been serving the people of Uzbekistan for nearly a century. As part of the International Red Cross and Red Crescent Movement, we are committed to protecting human life and health, and to ensuring respect for all human beings.",
     "stat_1_number": "95+",
     "stat_1_label": "Years of Service",
-    "stat_2_number": "14",
     "stat_2_label": "Regional Offices",
     "stat_3_number": "50K+",
     "stat_3_label": "Volunteers",
@@ -78,7 +77,12 @@
   },
   "news": {
     "label": "Latest News",
-    "title": "Stay Informed"
+    "title": "Stay Informed",
+    "read_more": "Read more",
+    "back": "All news",
+    "not_found": "News not found",
+    "share": "Share:",
+    "more": "More news"
   },
   "contact": {
     "label": "Contact Us",
@@ -95,8 +99,8 @@
     "title": "Regional Offices",
     "subtitle": "Our Red Crescent branches across all regions of Uzbekistan",
     "status": "Regional Network",
-    "regions": "Regional Branches",
-    "viloyats": "Regions",
+    "regions": "Regional Offices",
+    "territories": "Regions",
     "cities": "Cities",
     "details": "Details",
     "rais": "Chairman",

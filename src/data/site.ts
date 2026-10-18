@@ -1,7 +1,7 @@
 // Central editable site content.
-// TODO for editor (no code needed after Decap is wired):
-// all URLs, phones, socials and donate links live here / in public/content/*.json
-// and are editable via /admin.
+// Editable values (contacts, socials, donate links) now live in src/content/site.json
+// and are exposed by src/lib/content.ts — change them via /admin, no code needed.
+// This file keeps only the typed shapes and non-CMS assets (photo map, captions).
 
 export interface DonateLink {
   id: 'click' | 'payme' | 'uzum';
@@ -15,34 +15,6 @@ export interface SocialLinks {
   telegram: string;
   instagram: string;
 }
-
-export const socials: SocialLinks = {
-  facebook: 'https://www.facebook.com/UzbekistanRedCrescent',
-  telegram: 'https://t.me/uzbqizilyarimoy',
-  instagram: 'https://www.instagram.com/qizilyarimoy.uzb',
-};
-
-// TODO: replace '#' with real merchant / fundraising links from Click, Payme, Uzum
-export const donateLinks: DonateLink[] = [
-  {
-    id: 'click',
-    name: 'Click',
-    url: '#',
-    note: 'TODO: insert Click fundraising link',
-  },
-  {
-    id: 'payme',
-    name: 'Payme',
-    url: '#',
-    note: 'TODO: insert Payme fundraising link',
-  },
-  {
-    id: 'uzum',
-    name: 'Uzum Bank',
-    url: '#',
-    note: 'TODO: insert Uzum fundraising link',
-  },
-];
 
 // Real-photo map (partial set — more photos can be added via /admin uploads).
 // Files live in public/photos/real/.

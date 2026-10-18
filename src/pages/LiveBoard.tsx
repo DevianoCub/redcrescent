@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { offices } from '../data/offices';
+import { offices } from '../lib/content';
 import StatsBar from '../components/LiveBoard/StatsBar';
 import UzbekistanMap from '../components/LiveBoard/UzbekistanMap';
 import OfficeCard from '../components/LiveBoard/OfficeCard';

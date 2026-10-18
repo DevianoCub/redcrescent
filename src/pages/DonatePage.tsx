@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { donateLinks, photos } from '../data/site';
+import { donateLinks } from '../lib/content';
+import { photos } from '../data/site';
 
 const brandStyles: Record<string, string> = {
   click: 'bg-[#0a2540] text-white hover:bg-[#14335c]',

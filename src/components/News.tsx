@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useLocalized } from '../hooks/useLocalized';
-import { news } from '../data/news';
+import { news } from '../lib/content';
 
 export default function News() {
   const { t } = useTranslation();
@@ -28,10 +29,11 @@ export default function News() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {news.map((item, i) => (
-            <article
+            <Link
               key={item.id}
+              to={`/news/${item.id}`}
               className="group glass rounded-3xl overflow-hidden border border-gray-200/60 dark:border-white/10
-                hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                hover:shadow-xl hover:-translate-y-1 transition-all duration-300 block"
             >
               <div className="relative h-40 overflow-hidden bg-gray-900">
                 {item.image ? (
@@ -61,8 +63,14 @@ export default function News() {
                 <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
                   {loc(item.excerpt)}
                 </p>
+                <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">
+                  {t('news.read_more')}
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

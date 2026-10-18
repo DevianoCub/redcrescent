@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { socials } from '../data/site';
+import { socials } from '../lib/content';
 
 export default function Footer() {
   const { t } = useTranslation();

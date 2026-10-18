@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { photos } from '../data/site';
+import { officeStats } from '../lib/content';
 
 export default function About() {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ export default function About() {
 
   const stats = [
     { number: t('about.stat_1_number'), label: t('about.stat_1_label') },
-    { number: t('about.stat_2_number'), label: t('about.stat_2_label') },
+    { number: String(officeStats.offices), label: t('about.stat_2_label') },
     { number: t('about.stat_3_number'), label: t('about.stat_3_label') },
   ];
 

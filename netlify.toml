@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA fallback for client-side routes (/news/:id, /live, /donate, ...).
+# Existing static files (e.g. /admin/index.html, /admin/config.yml, photos, docs)
+# are served before redirects, so the CMS at /admin is not affected.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

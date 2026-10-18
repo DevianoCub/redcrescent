@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "id": "astana-forum-2026",
+      "published": true,
+      "date_ru": "Октябрь 2025",
+      "date_uz": "2025-yil oktabr",
+      "date_en": "October 2025",
+      "title_ru": "Общество Красного Полумесяца Узбекистана на Action Forum в Астане",
+      "title_uz": "O'zbekiston Qizil Yarim Oy jamiyati Astanadagi Action Forumda",
+      "title_en": "Uzbekistan Red Crescent at the Action Forum in Astana",
+      "excerpt_ru": "Делегация Общества приняла участие в международном Форуме действий, посвящённом развитию добровольчества и гуманитарного реагирования.",
+      "excerpt_uz": "Jamiyat delegatsiyasi ko'ngillilik va insonparvarlik yordamini rivojlantirishga bag'ishlangan xalqaro Action Forumda ishtirok etdi.",
+      "excerpt_en": "The Society delegation took part in the international Action Forum dedicated to developing volunteering and humanitarian response.",
+      "body_ru": "Делегация Общества Красного Полумесяца Узбекистана приняла участие в международном Форуме действий в Астане.\n\nВ рамках форума обсуждались вопросы развития добровольческого движения, укрепления потенциала национальных обществ и координации гуманитарного реагирования в регионе.\n\nУчастники обменялись опытом по подготовке волонтёров, работе с молодёжью и внедрению современных стандартов первой помощи. По итогам встречи намечены направления дальнейшего сотрудничества с партнёрскими организациями.",
+      "body_uz": "O'zbekiston Qizil Yarim Oy jamiyati delegatsiyasi Astanada bo'lib o'tgan xalqaro Action Forumda ishtirok etdi.\n\nForum doirasida ko'ngillilik harakatini rivojlantirish, milliy jamiyatlar salohiyatini mustahkamlash va mintaqada insonparvarlik yordamini muvofiqlashtirish masalalari muhokama qilindi.\n\nIshtirokchilar ko'ngillilarni tayyorlash, yoshlar bilan ishlash va birinchi yordamning zamonaviy standartlarini joriy etish bo'yicha tajriba almashdilar.",
+      "body_en": "A delegation of the Red Crescent Society of Uzbekistan took part in the international Action Forum in Astana.\n\nThe forum covered the development of the volunteer movement, strengthening the capacity of national societies and coordinating humanitarian response in the region.\n\nParticipants exchanged experience on volunteer training, youth engagement and the introduction of modern first-aid standards.",
+      "image": "/photos/real/forum-astana-official-12.jpg",
+      "gallery": [
+        {
+          "image": "/photos/real/forum-astana-official-12.jpg"
+        },
+        {
+          "image": "/photos/real/volon-leader-group-11.jpg"
+        }
+      ],
+      "category_ru": "Международное сотрудничество"
+    },
+    {
+      "id": "evacuation-drill",
+      "published": true,
+      "date_ru": "Сентябрь 2025",
+      "date_uz": "2025-yil sentabr",
+      "date_en": "September 2025",
+      "title_ru": "Учебная эвакуация совместно с экстренными службами",
+      "title_uz": "Favqulodda vaziyat xizmatlari bilan o'quv evakuatsiyasi",
+      "title_en": "Emergency evacuation drill with partner services",
+      "excerpt_ru": "Волонтёры и специалисты Общества отработали навыки эвакуации и оказания первой помощи в ходе совместных учений.",
+      "excerpt_uz": "Jamiyat ko'ngillilari va mutaxassislari qo'shma o'quv mashg'ulotlarida evakuatsiya va birinchi yordam ko'nikmalarini mashq qildilar.",
+      "excerpt_en": "Volunteers and specialists of the Society practised evacuation and first-aid skills during joint drills.",
+      "body_ru": "Общество Красного Полумесяца Узбекистана совместно с экстренными службами провело учебную эвакуацию.\n\nВ ходе учений волонтёры отработали алгоритмы действий при чрезвычайных ситуациях: организованный выход людей, эвакуацию пострадавших и оказание первой помощи на месте.\n\nТакие тренировки повышают готовность команд к реальным вызовам и позволяют отладить взаимодействие с партнёрскими службами.",
+      "body_uz": "O'zbekiston Qizil Yarim Oy jamiyati favqulodda vaziyat xizmatlari bilan hamkorlikda o'quv evakuatsiyasini o'tkazdi.\n\nMashg'ulotlar davomida ko'ngillilar favqulodda vaziyatlarda harakat qilish tartibini mashq qildilar: odamlarni tartibli chiqarish, jabrlanganlarni evakuatsiya qilish va joyida birinchi yordam ko'rsatish.\n\nBunday mashg'ulotlar jamoalarning haqiqiy vaziyatlarga tayyorligini oshiradi.",
+      "body_en": "The Red Crescent Society of Uzbekistan, together with emergency services, conducted an evacuation drill.\n\nDuring the exercise, volunteers practised emergency procedures: orderly exit of people, evacuation of casualties and on-site first aid.\n\nSuch drills increase teams' readiness for real challenges and improve coordination with partner services.",
+      "image": "/photos/real/volon-evacuation-bus-09.jpg",
+      "gallery": [
+        {
+          "image": "/photos/real/volon-evacuation-bus-09.jpg"
+        },
+        {
+          "image": "/photos/real/volon-youth-hall-10.jpg"
+        }
+      ],
+      "category_ru": "Реагирование на ЧС"
+    },
+    {
+      "id": "flood-relief",
+      "published": true,
+      "date_ru": "15 августа 2025",
+      "date_uz": "15-avgust, 2025",
+      "date_en": "August 15, 2025",
+      "title_ru": "Экстренная помощь в пострадавших от наводнения районах",
+      "title_uz": "Suv toshqinidan zararlangan hududlarga tez yordam",
+      "title_en": "Emergency Relief in Flood-Affected Areas",
+      "excerpt_ru": "Группы быстрого реагирования направлены для оказания гуманитарной помощи пострадавшим от сезонного наводнения.",
+      "excerpt_uz": "Mavsumiy suv toshqinidan zararlangan aholiga insonparvarlik yordami ko'rsatish uchun tezkor javob guruhlari yuborildi.",
+      "excerpt_en": "Rapid response teams deployed to provide humanitarian assistance to communities affected by seasonal flooding.",
+      "body_ru": "Группы быстрого реагирования Общества Красного Полумесяца были направлены в районы, пострадавшие от сезонного наводнения.\n\nПострадавшим семьям оказывается гуманитарная помощь: предоставляются продовольственные наборы, предметы первой необходимости и питьевая вода.\n\nВолонтёры также ведут работу с населением по информированию о правилах безопасности в период паводков.",
+      "body_uz": "Qizil Yarim Oy jamiyatining tezkor javob guruhlari mavsumiy suv toshqinidan zararlangan hududlarga yuborildi.\n\nJabrlangan oilalarga insonparvarlik yordami ko'rsatilmoqda: oziq-ovqat to'plamlari, birinchi zarur buyumlar va ichimlik suvi tarqatilmoqda.\n\nKo'ngillilar aholiga toshqin davrida xavfsizlik qoidalari bo'yicha tushuntirish ishlarini olib bormoqda.",
+      "body_en": "Rapid response teams of the Red Crescent Society were deployed to areas affected by seasonal flooding.\n\nAffected families receive humanitarian assistance: food packages, essential items and drinking water.\n\nVolunteers also inform communities about safety rules during the flood period.",
+      "image": "/photos/real/volon-stadium-first-aid-06.jpg",
+      "category_ru": "Гуманитарная помощь"
+    },
+    {
+      "id": "blood-donation",
+      "published": true,
+      "date_ru": "10 августа 2025",
+      "date_uz": "10-avgust, 2025",
+      "date_en": "August 10, 2025",
+      "title_ru": "Итоги акции по донорству крови",
+      "title_uz": "Qon donorlik aktsiyasi natijalari",
+      "title_en": "Blood Donation Campaign Results",
+      "excerpt_ru": "Всенародная акция по донорству крови собрала более 5 000 единиц, превзойдя цели по всем регионам.",
+      "excerpt_uz": "Umumxalq qon donorlik aktsiyasi barcha viloyatlar bo'ylab 5 000 dan ortiq birlik to'plab, maqsadlarga erishdi.",
+      "excerpt_en": "National blood donation drive collected over 5,000 units, exceeding targets across all regions.",
+      "body_ru": "Всенародная акция по донорству крови, организованная при поддержке региональных отделений Общества, собрала более 5 000 единиц крови.\n\nК акции присоединились сотрудники организаций, студенты и волонтёры. Собранная кровь направлена в медицинские учреждения республики для оказания помощи нуждающимся пациентам.\n\nОбщество благодарит всех доноров за вклад в спасение жизней.",
+      "body_uz": "Jamiyatning hududiy bo'linmalari ko'magida tashkil etilgan umumxalq qon donorlik aktsiyasi 5 000 dan ortiq birlik qon to'pladi.\n\nAktsiyaga tashkilotlar xodimlari, talabalar va ko'ngillilar qo'shildi. To'plangan qon muhtoj bemorlarga yordam ko'rsatish uchun respublika tibbiyot muassasalariga yo'naltirildi.\n\nJamiyat barcha donorlarga hayot saqlashga qo'shgan hissasi uchun minnatdorchilik bildiradi.",
+      "body_en": "A nationwide blood donation campaign, organised with the support of the Society's regional branches, collected over 5,000 units of blood.\n\nEmployees of organisations, students and volunteers joined the campaign. The collected blood was sent to medical institutions of the republic to help patients in need.\n\nThe Society thanks all donors for their contribution to saving lives.",
+      "image": "/photos/real/donate-home-care-02.jpg",
+      "category_ru": "Донорство"
+    },
+    {
+      "id": "volunteer-training",
+      "published": true,
+      "date_ru": "5 августа 2025",
+      "date_uz": "5-avgust, 2025",
+      "date_en": "August 5, 2025",
+      "title_ru": "Новая программа обучения волонтёров",
+      "title_uz": "Yangi ko'ngillilar o'quv dasturi",
+      "title_en": "New Volunteer Training Program",
+      "excerpt_ru": "Запуск обновлённой программы обучения волонтёров, включающей первую помощь, реагирование на ЧС и общественное здоровье.",
+      "excerpt_uz": "Birinchi yordam, favqulodda vaziyatlarga javob va jamiyat salomatligini o'z ichiga olgan yangilangan ko'ngillilar o'quv dasturining ishga tushirilishi.",
+      "excerpt_en": "Launch of enhanced volunteer training program covering first aid, emergency response, and community health.",
+      "body_ru": "Общество Красного Полумесяца Узбекистана запускает обновлённую программу обучения волонтёров.\n\nПрограмма включает модули по первой помощи, реагированию на чрезвычайные ситуации, psychosocialной поддержке и общественному здоровью.\n\nЗанятия проводятся в учебном центре и на выездных тренингах. По итогам обучения волонтёры получают сертификаты.",
+      "body_uz": "O'zbekiston Qizil Yarim Oy jamiyati ko'ngillilar uchun yangilangan o'quv dasturini ishga tushirmoqda.\n\nDastur birinchi yordam, favqulodda vaziyatlarga javob, psixosotsial qo'llab-quvvatlash va jamiyat salomatligi modullarini o'z ichiga oladi.\n\nMashg'ulotlar o'quv markazida va chiqib o'qitish shaklida o'tkaziladi. O'quv yakunida ko'ngillilarga sertifikat beriladi.",
+      "body_en": "The Red Crescent Society of Uzbekistan is launching an enhanced volunteer training programme.\n\nThe programme includes modules on first aid, emergency response, psychosocial support and community health.\n\nClasses are held at the training centre and as outreach trainings. Volunteers receive certificates upon completion.",
+      "image": "/photos/real/volon-first-aid-manikin-02.jpg",
+      "category_ru": "Обучение"
+    }
+  ]
+}

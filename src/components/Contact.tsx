@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useLocalized } from '../hooks/useLocalized';
-import { contactInfo } from '../data/contacts';
+import { contactInfo } from '../lib/content';
 import { useState } from 'react';
 
 export default function Contact() {

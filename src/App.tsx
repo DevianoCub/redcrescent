@@ -12,6 +12,7 @@ import LiveBoard from './pages/LiveBoard';
 import DonatePage from './pages/DonatePage';
 import AboutPage from './pages/AboutPage';
 import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 import AcademyPage from './pages/AcademyPage';
 
 function LandingPage() {
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:id" element={<NewsDetailPage />} />
           <Route path="/academy" element={<AcademyPage />} />
         </Routes>
         <Footer />

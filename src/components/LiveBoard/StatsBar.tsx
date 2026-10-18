@@ -1,17 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { offices } from '../../data/offices';
+import { officeStats } from '../../lib/content';
 
 export default function StatsBar() {
   const { t } = useTranslation();
 
-  const regions = offices.length;
-  const viloyats = new Set(offices.map(o => o.city)).size;
-  const cities = new Set(offices.map(o => o.city)).size;
-
   const stats = [
-    { value: regions, label: t('live.regions') },
-    { value: viloyats, label: t('live.viloyats') },
-    { value: cities, label: t('live.cities') },
+    { value: officeStats.offices, label: t('live.regions') },
+    { value: officeStats.territories, label: t('live.territories') },
+    { value: officeStats.cities, label: t('live.cities') },
   ];
 
   return (

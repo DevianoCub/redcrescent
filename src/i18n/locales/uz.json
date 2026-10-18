@@ -22,7 +22,6 @@
     "description": "O'zbekiston Qizil Yarim Oy Jamiyati deyarli bir asrdan beri O'zbekiston xalqiga xizmat qilib kelmoqda. Xalqaro Qizil Xoch va Qizil Yarim Oy Harakati tarkibida biz inson hayoti va salomatligini himoya qilishga, har bir inson hurmatiga kafolat berishga intilamiz.",
     "stat_1_number": "95+",
     "stat_1_label": "Yillik xizmat",
-    "stat_2_number": "14",
     "stat_2_label": "Hududiy tashkilotlar",
     "stat_3_number": "50 000+",
     "stat_3_label": "Ko'ngillilar",
@@ -78,7 +77,12 @@
   },
   "news": {
     "label": "So'nggi yangiliklar",
-    "title": "Yangiliklardan xabardor bo'ling"
+    "title": "Yangiliklardan xabardor bo'ling",
+    "read_more": "Batafsil",
+    "back": "Barcha yangiliklar",
+    "not_found": "Yangilik topilmadi",
+    "share": "Ulashish:",
+    "more": "Boshqa yangiliklar"
   },
   "contact": {
     "label": "Biz bilan bog'laning",
@@ -96,7 +100,7 @@
     "subtitle": "O'zbekistonning barcha hududlaridagi Qizil Yarim Oy bo'limlarimiz",
     "status": "Hududiy tarmoq",
     "regions": "Hududiy tashkilotlar",
-    "viloyats": "Viloyatlar",
+    "territories": "Hududlar",
     "cities": "Shaharlar",
     "details": "Batafsil",
     "rais": "Rais",
