@@ -13,8 +13,20 @@
     "instagram": "https://www.instagram.com/qizilyarimoy.uzb"
   },
   "donate_links": [
-    { "id": "click", "name": "Click", "url": "#" },
-    { "id": "payme", "name": "Payme", "url": "#" },
-    { "id": "uzum", "name": "Uzum Bank", "url": "#" }
+    {
+      "id": "click",
+      "name": "Click",
+      "url": "https://github.com"
+    },
+    {
+      "id": "payme",
+      "name": "Payme",
+      "url": "#"
+    },
+    {
+      "id": "uzum",
+      "name": "Uzum Bank",
+      "url": "#"
+    }
   ]
 }
