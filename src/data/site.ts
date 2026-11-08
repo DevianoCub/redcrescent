@@ -23,7 +23,7 @@ export const photos = {
   about: '/photos/real/team-office-group-03.jpg',
   donateBanner: '/photos/real/donate-food-package-05.jpg',
   academyBanner: '/photos/real/volon-first-aid-manikin-02.jpg',
-  // Group photo with the volunteers' leader (name editable below, no code needed later via /admin)
+
   volonLeader: '/photos/real/volon-leader-group-11.jpg',
   activities: {
     medical: '/photos/real/donate-food-package-05.jpg',
@@ -45,7 +45,6 @@ export const photos = {
   ],
 } as const;
 
-// TODO: вписать имя и должность лидера волонтёров (пришлёт владелец)
 export const volonLeaderCaption = {
   ru: 'Лидер волонтёров Общества с командой',
   uz: 'Jamiyat ko‘ngillilari yetakchisi jamoa bilan',
